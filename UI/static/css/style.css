@@ -1,0 +1,145 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(245, 245, 245, 0.966);
+    padding: 0.5% 0;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 6;
+    box-shadow: 0 4px 6px hsla(0, 0%, 0%, .1);
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+
+.navbar .nav-left {
+    padding-left: 2%
+}
+
+.navbar .nav-middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar .nav-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.navbar .nav-left .left-items {
+    font-size: 20px;
+    font-weight: 500;
+    flex: 1;
+}
+
+.navbar .nav-middle .middle-items {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar .nav-middle .middle-items input {
+    padding: 4%;
+    margin: 0;
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 0px;
+}
+
+.navbar .nav-middle .middle-items button {
+    background-color: whitesmoke;
+    border: none;
+    font-size: 18px;
+}
+
+.navbar .nav-right .right-items {
+    padding: 8px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+.footer .social {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .social a {
+    color: black;
+    font-size: 20px;
+    margin: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 60%;
+    padding: 1%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.footer .copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.mainview {
+    padding-top: 3.9%;
+    display: flex;
+    flex-direction: row;
+}
+
+.mainview .intro-background {
+    flex-basis: 80%;
+    background-image: url('../image/bus.jpg');
+    background-size: cover;
+}
+
+.mainview .intro {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(15, 97, 155, 0.562);
+    border-style: solid;
+    padding: 5%;
+    margin-right: 8%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 100%;
+    border-width: 0;
+}
+
+.mainview .intro .intro-header {
+    font-size: 40px;
+    color: white;
+}
+
+.mainview .intro .intro-body {
+    font-size: 16px;
+    color: white;
+}
