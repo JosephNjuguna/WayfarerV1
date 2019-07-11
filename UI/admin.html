@@ -18,10 +18,10 @@
                 <h2>WAYFARER</h2>
             </div>
             <div class="nav-body">
-                <a href="#">Create trip</a>
-                <a href="#">Trips</a>
-                <a href="#">Cancel trip.</a>
-                <a href="#">Log out</a>
+                <a  id="navCreatetrip" href="#">Create trip</a>
+                <a  id="navTrips" href="#">Trips</a>
+                <a  id="navCancelTrip" href="#">Cancel trip.</a>
+                <a  href="./index.html">Log out</a>
             </div>
         </div>
         <div class="main-body">
@@ -38,7 +38,7 @@
                     </li>
                 </ul>
             </nav>
-            <div class="admin-body">
+            <div class="admin-body" id="createTrips">
                 <div class="create-trip">
                     <form action="">
                         <div class="header">
@@ -63,6 +63,107 @@
                 </div>
             </div>
 
+            <div class="admin-body " id="tripsModal">
+                <div class="trips">
+                    <div class="trip-info">
+                        <img src="./static/image/bus2.jpg" alt="">
+                        <div class="trip-detail">
+                            <p>Route : <b>KIGALI-KAMPALA</b></p>
+                            <div class="book-now">
+                                <p>Price : <b>4000</b> kes</p>
+                                <p>Date : 1/1/2019.</p>
+                            </div>
+                            <p>Bus License Number : <b>RAD 123</b></p>
+                            <div class="book-now">
+                                <h5>Seat Capacity : <b>15</b></h5>
+                                <a href="./booking.html" class="button"><b>BOOK NOW</b></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trip-info">
+                        <img src="./static/image/bus6.jpg" alt="">
+                        <div class="trip-detail">
+                            <p>Route : <b>KAMPALA-KIGALI</b></p>
+                            <div class="book-now">
+                                <p>Price : <b>2000</b> kes</p>
+                                <p>Date : 1/1/2019.</p>
+                            </div>
+                            <p>Bus License Number : <b>RAD 123</b></p>
+                            <div class="book-now">
+                                <h5>Seat Capacity : <b>15</b></h5>
+                                <a href="./booking.html" class="button"><b>BOOK NOW</b></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trip-info">
+                        <img src="./static/image/bus4.jpg" alt="">
+                        <div class="trip-detail">
+                            <p>Route : <b>KAMPALA-NAIROBI</b></p>
+                            <div class="book-now">
+                                <p>Price : <b>3000</b> kes</p>
+                                <p>Date : 1/1/2019.</p>
+                            </div>
+                            <p>Bus License Number : <b>RAD 123</b></p>
+                            <div class="book-now">
+                                <h5>Seat Capacity : <b>15</b></h5>
+                                <a href="./booking.html" class="button"><b>BOOK NOW</b></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trip-info">
+                        <img src="./static/image/bus2.jpg" alt="">
+                        <div class="trip-detail">
+                            <p>Route : <b>KIGALI-KAMPALA</b></p>
+                            <div class="book-now">
+                                <p>Price : <b>4000</b> kes</p>
+                                <p>Date : 1/1/2019.</p>
+                            </div>
+                            <p>Bus License Number : <b>RAD 123</b></p>
+                            <div class="book-now">
+                                <h5>Seat Capacity : <b>15</b></h5>
+                                <a href="./booking.html" class="button"><b>BOOK NOW</b></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trip-info">
+                        <img src="./static/image/bus6.jpg" alt="">
+                        <div class="trip-detail">
+                            <p>Route : <b>KAMPALA-KIGALI</b></p>
+                            <div class="book-now">
+                                <p>Price : <b>2000</b> kes</p>
+                                <p>Date : 1/1/2019.</p>
+                            </div>
+                            <p>Bus License Number : <b>RAD 123</b></p>
+                            <div class="book-now">
+                                <h5>Seat Capacity : <b>15</b></h5>
+                                <a href="./booking.html" class="button"><b>BOOK NOW</b></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trip-info">
+                        <img src="./static/image/bus4.jpg" alt="">
+                        <div class="trip-detail">
+                            <p>Route : <b>KAMPALA-NAIROBI</b></p>
+                            <div class="book-now">
+                                <p>Price : <b>3000</b> kes</p>
+                                <p>Date : 1/1/2019.</p>
+                            </div>
+                            <p>Bus License Number : <b>RAD 123</b></p>
+                            <div class="book-now">
+                                <h5>Seat Capacity : <b>15</b></h5>
+                                <a href="./booking.html" class="button"><b>BOOK NOW</b></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collectionfooter">
+                    <div class="collectiondiv">
+                        <button>Prev</button>
+                        <button>Next</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
     <footer class="footer">
@@ -78,6 +179,8 @@
             <P>WAYFERER @ 2019.</P>
         </div>
     </footer>
+    <script type="text/javascript" src="./static/js/admin.js"></script>
+
 </body>
 
 </html>
