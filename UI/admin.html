@@ -18,10 +18,9 @@
                 <h2>WAYFARER</h2>
             </div>
             <div class="nav-body">
-                <a  id="navCreatetrip" href="#">Create trip</a>
-                <a  id="navTrips" href="#">Trips</a>
-                <a  id="navCancelTrip" href="#">Cancel trip.</a>
-                <a  href="./index.html">Log out</a>
+                <a id="navCreatetrip" href="#">Create trip</a>
+                <a id="navTrips" href="#">Trips</a>
+                <a href="./index.html">Log out</a>
             </div>
         </div>
         <div class="main-body">
@@ -38,6 +37,7 @@
                     </li>
                 </ul>
             </nav>
+
             <div class="admin-body" id="createTrips">
                 <div class="create-trip">
                     <form action="">
@@ -57,7 +57,7 @@
                             <input type="text" placeholder="enter seat capacity">
                         </div>
                         <div class="footer">
-                            <button type="submit">Create</button>
+                            <button type="button" id="createTrip">Create</button>
                         </div>
                     </form>
                 </div>
@@ -161,6 +161,14 @@
                         <button>Prev</button>
                         <button>Next</button>
                     </div>
+                </div>
+            </div>
+
+            <div class="tripcancel" id="tripCreated">
+                <div class="detail">
+                    <h3>Trip Cancelled.</h3>
+                    <p>This trip has been successfully created.</p>
+                    <a href="./admin.html">OK</a>
                 </div>
             </div>
 
