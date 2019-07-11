@@ -325,8 +325,29 @@ a {
 
 .info-trip {
     display: flex;
-    padding: 2%;
     flex-direction: column;
+}
+.mainview-admin{
+    display:flex;
+    flex-direction: column  ;
+}
+.mainview-admin .info-trip-admin{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 0;
+}
+.info-trip-admin .trip-detail{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 4%;
+}
+
+.info-trip-admin img{
+    width: 50%;
+    height: 50%;
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.4);
 }
 
 .trips-detail {
@@ -356,7 +377,6 @@ a {
 }
 
 .trips-detail .trips-info img {
-    width: 100%;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
@@ -478,7 +498,7 @@ a {
     flex-direction: column;
     justify-content: center;
 }
-#tripsModal{
+#tripsModal2{
     display: none;
 }
 
