@@ -329,7 +329,7 @@ a {
 }
 .mainview-admin{
     display:flex;
-    flex-direction: column  ;
+    flex-direction: column;
 }
 .mainview-admin .info-trip-admin{
     display: flex;
@@ -337,11 +337,63 @@ a {
     margin: auto;
     padding: 0;
 }
+
 .info-trip-admin .trip-detail{
     display: flex;
     flex-direction: column;
     align-self: center;
     padding: 4%;
+}
+
+.info-trip-admin .trip-detail button{
+    padding: 3%;
+    color: white;
+    outline: none;
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 0;
+    background-color: rgb(253, 7, 7);
+    cursor: pointer;
+}
+
+.tripcancel{
+    flex-direction: row;
+    padding: 1%;
+    display: none;
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.705);
+}
+
+.mainview-admin .tripcancel .detail{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: auto;
+    padding: 1%;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 0;
+}
+.tripcancel .detail a{
+    padding: 2%;
+    color: white;
+    outline: none;
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 0;
+    background-color: #0552B5;
+    cursor: pointer;
+    margin: auto;
+    width: 50%;
+    font-size: 14px;
+    text-align: center;
 }
 
 .info-trip-admin img{
@@ -558,11 +610,13 @@ a {
     border-radius: 4px;
     border-width: 0px;
 }
+
 .mainview-admin .main-body .admin-body .collectionfooter{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .mainview-admin .main-body .admin-body .collectionfooter .collectiondiv{
    margin: auto;
 }

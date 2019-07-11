@@ -1,9 +1,9 @@
-//shop div
 var createtripModal = document.getElementById("createTrips");
 var trips = document.getElementById("tripsModal2");
-// profile modal button
+var tripModal = document.getElementById("tripCreated");
 var showCreatetrip = document.getElementById("navCreatetrip");
 var showTrips = document.getElementById("navTrips");
+var tripCreated = document.getElementById("createTrip");
 
 showCreatetrip.onclick = function () {
     createtripModal.style.display = "flex";
@@ -13,4 +13,8 @@ showCreatetrip.onclick = function () {
 showTrips.onclick = function () {
     trips.style.display = "flex";
     createtripModal.style.display = "none";
+};
+
+tripCreated.onclick = function () {
+    tripModal.style.display = "flex";
 };
