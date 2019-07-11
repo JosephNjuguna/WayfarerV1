@@ -1,6 +1,6 @@
 //shop div
 var createtripModal = document.getElementById("createTrips");
-var trips = document.getElementById("tripsModal");
+var trips = document.getElementById("tripsModal2");
 // profile modal button
 var showCreatetrip = document.getElementById("navCreatetrip");
 var showTrips = document.getElementById("navTrips");
