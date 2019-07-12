@@ -113,6 +113,17 @@ a {
     display: flex;
     flex-direction: row;
 }
+.mainview .bookingHistory{
+    display: flex;
+    flex-direction: column;
+}
+.mainview .success{
+    height: 60vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
 .mainview .intro-background {
     flex-basis: 80%;
@@ -223,6 +234,13 @@ a {
     flex-wrap: wrap;
     flex-basis: 70%;
     padding: 2%;
+    margin: auto;
+}
+.mainview  .bookingHistory .trips {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 10%;
 }
 
 .mainview .offer {
@@ -310,7 +328,7 @@ a {
     flex: 1;
 }
 
-.trip-info .trip-detail .book-now .button {
+.button {
     margin: 0;
     padding: 6px;
     color: white;
@@ -326,6 +344,7 @@ a {
 .info-trip {
     display: flex;
     flex-direction: column;
+    padding: 2%;
 }
 .mainview-admin{
     display:flex;
@@ -429,6 +448,8 @@ a {
 }
 
 .trips-detail .trips-info img {
+    width: 100%;
+    height: 100%;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
@@ -560,6 +581,7 @@ a {
     flex-wrap: wrap;
     flex-basis: 70%;
     padding: 2%;
+    margin: auto;
 }
 
 .mainview-admin .main-body .admin-body .create-trip {
@@ -611,17 +633,18 @@ a {
     border-width: 0px;
 }
 
-.mainview-admin .main-body .admin-body .collectionfooter{
+.collectionfooter{
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.mainview-admin .main-body .admin-body .collectionfooter .collectiondiv{
+.collectionfooter .collectiondiv{
    margin: auto;
 }
 
-.mainview-admin .main-body .admin-body .collectionfooter .collectiondiv button{
+.collectionfooter .collectiondiv button{
     margin: 0;
     padding: 6px;
     color: white;
