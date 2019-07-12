@@ -13,9 +13,10 @@
 
 <body>
     <div class="mainview-admin">
-        <div class="side-nav">
+        <div class="side-nav" id="navSide">
             <div class="header">
                 <h2>WAYFARER</h2>
+                <i class="fa fa-remove" id="hideNav"></i>
             </div>
             <div class="nav-body">
                 <a id="navCreatetrip" href="#">Create trip</a>
@@ -26,6 +27,11 @@
         </div>
         <div class="main-body">
             <nav class="navbar">
+                <ul class="nav-left">
+                    <li class="left-items">
+                        <a id="showNav" href="#"><i class="fa fa-reorder"></i></a>
+                    </li>
+                </ul>
                 <ul class="nav-right">
                     <li class="right-items">
                         <a href="#">Admin Dashboard</a>
