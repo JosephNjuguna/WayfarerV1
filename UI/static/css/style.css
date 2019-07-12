@@ -317,15 +317,19 @@ a {
     color: white;
 }
 
-.trip-info .trip-detail .book-now {
+.book-now {
     margin-top: 1%;
     display: flex;
     flex-direction: row;
 }
 
-.trip-info .trip-detail .book-now p {
+.book-now p {
     margin: 0;
     flex: 1;
+}
+.book-now h5 {
+    margin: 0;
+    padding: 2% 0 0 3% ;
 }
 
 .button {
@@ -565,13 +569,16 @@ a {
 }
 
 .mainview-admin .main-body .admin-body {
-    width: 85%;
+    width: 90%;
     padding: 5% 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 #tripsModal2{
+    display: none;
+}
+#bookingModal{
     display: none;
 }
 
@@ -584,6 +591,33 @@ a {
     margin: auto;
 }
 
+.mainview-admin .main-body .admin-body .bookings {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+
+.mainview-admin .main-body .admin-body .bookings .booking-detail {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+    margin: 4px;
+    padding: 1%;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 0px;
+    background-color: rgb(223, 223, 223);
+}
+.mainview-admin .main-body .admin-body .bookings .booking-detail p {
+   margin: 0;
+   padding: 1px;
+}
+.mainview-admin .main-body .admin-body .bookings .booking-detail .book-now p{
+    flex: 1;
+    padding-right: 12px;
+ }
 .mainview-admin .main-body .admin-body .create-trip {
     display: flex;
     flex-direction: column;
