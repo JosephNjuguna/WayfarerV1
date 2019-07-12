@@ -13,9 +13,10 @@
 
 <body>
     <div class="mainview-admin">
-        <div class="side-nav">
+        <div class="side-nav" id="navSide">
             <div class="header">
                 <h2>WAYFARER</h2>
+                <i class="fa fa-remove" id="hideNav"></i>
             </div>
             <div class="nav-body">
                 <a id="navCreatetrip" href="#">Create trip</a>
@@ -26,10 +27,14 @@
         </div>
         <div class="main-body">
             <nav class="navbar">
-                <ul class="nav-middle">
-                    <li class="middle-items">
-                        <input type="text" placeholder="search a trip here.....">
-                        <button><i class="fa fa-search"></i></button>
+                <ul class="nav-left">
+                    <li class="left-items">
+                        <a id="showNav" href="#"><i class="fa fa-reorder"></i></a>
+                    </li>
+                </ul>
+                <ul class="nav-right">
+                    <li class="right-items">
+                        <a href="#">Admin Dashboard</a>
                     </li>
                 </ul>
                 <ul class="nav-right">
@@ -203,16 +208,16 @@
                         <p>Seat Capacity : <b>15</b></p>
                     </div>
                     <div class="booking-detail">
-                            <p><label for="">name :</label> Sam kolder</p>
-                            <p><label for="">email : </label> sam@gmail.com</p>
-                            <div class="book-now">
-                                <p>Booking id: <b>4</b></p>
-                                <label for="">Date : 1/1/2019.</label>
-                            </div>
-                            <p>Bus License Number : <b>RAD 126</b></p>
-                            <p>Trip Route : <b>KAMPALA-KIGALI</b></p>
-                            <p>Seat Capacity : <b>15</b></p>
+                        <p><label for="">name :</label> Sam kolder</p>
+                        <p><label for="">email : </label> sam@gmail.com</p>
+                        <div class="book-now">
+                            <p>Booking id: <b>4</b></p>
+                            <label for="">Date : 1/1/2019.</label>
                         </div>
+                        <p>Bus License Number : <b>RAD 126</b></p>
+                        <p>Trip Route : <b>KAMPALA-KIGALI</b></p>
+                        <p>Seat Capacity : <b>15</b></p>
+                    </div>
 
                 </div>
                 <div class="collectionfooter">
