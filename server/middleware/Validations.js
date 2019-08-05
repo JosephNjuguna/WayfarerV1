@@ -46,6 +46,7 @@ class Validations {
 			}
 			next();
 		} catch (error) {
+			console.log(error);
 			return reqResponses.internalError(res);
 		}
 	}

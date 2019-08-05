@@ -8,6 +8,7 @@ dotenv.config();
 const dbConfig = {
 	connectionString: config.db,
 };
+console.log(config.db);
 
 class DatabaseInit {
 	constructor() {
@@ -70,7 +71,7 @@ class DatabaseInit {
 				// eslint-disable-next-line max-len
 				const value = [adminUser.firstname, adminUser.lastname, adminUser.email, adminUser.password, adminUser.isAdmin];
 				// eslint-disable-next-line no-unused-vars
-				const dataEntry = this.query(sqlAdmin, value);
+				const dataEntry = await this.query(sqlAdmin, value);
 			}
 		} catch (error) {
 			return error.toString();
