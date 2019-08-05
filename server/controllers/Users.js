@@ -32,6 +32,7 @@ class Users {
 				return reqResponses.handleSignupsuccess('successfully signed up', user, res);
 			}
 		} catch (error) {
+			console.log(error.toString());
 			return reqResponses.handleError(500, error.toString(), res);
 		}
 	}
