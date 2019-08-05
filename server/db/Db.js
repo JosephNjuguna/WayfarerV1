@@ -8,7 +8,6 @@ dotenv.config();
 const dbConfig = {
 	connectionString: config.db,
 };
-console.log(config.db);
 
 class DatabaseInit {
 	constructor() {
