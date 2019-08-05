@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+- '8'
+cache: 
+directories:
+- node_modules
+before_script:
+- npm install
+- psql -c 'create database wayfarer1_test;' -U postgres
+script:
+- npm run test
+after_success:
+- npm run coverage
+notifications:
+  email: false
+env:
+  global:
+    secure: Natls7MfxoxrNRI1tr9yjiCJe76IwwTpFMCM08j7ItDiazbZbKbaUpTzStDcgGqIQ2AZrRvWtRULZP3PlcErfYVVkWuHQ741Z8diwyjbkRiJKLTLgO/9RnenHASmpxHRxFYL21yuRiYP8t9q1xalkP1/6F+lWmWRy8EtunzGLlPPsBp7TtdvGfKKjacLYdXrdqkbwLQqIUcAAQD7siqGBWzMWqOa3MZPFFvSRx4Y6HQCXd0JeltzQ8BXh8vGrzIvHy2ffvjkgNOdu5ZXL0l4s7nICi0/tgXJYLP1BVL1vqllHxCYAwV/mKEPVdKePHnZ3RkiOfg6AdLIZUOkBe3/+ZXkqlx9qWi78B7+kMJu0DXPk+vk4Kwc8qA+hNKXrMpvqxR6geb2RvZFtfiIdQbLZ9LyE/sedi5uWcZB6jw4OEQIW/liWj2tquabjavtIq0Boi0e+gde+/TDWkFxsEf4eqR+xPfTqIM07yRUBrErNKVcedF/N8pqdfG0ysuow/6XsYUEWPBrFxoZ/LQYefHcBv9Izxh/Ixtk2gYZsJs/dcjJvUIOi4OFNy24fo9FX/ai3Asz76uQX6iTDfzHqWwP1sLPMzsS+duXzPU7681i3IOoHg8lwT8R/DQC963fL0sYfhBBU+9z1EcY5k3Ac4GIZkK5R5hDWk57GMXZAzbLY/g=
