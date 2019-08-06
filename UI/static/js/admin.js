@@ -11,16 +11,13 @@ var showbooking = document.getElementById("navBookings");
 showCreatetrip.onclick = function () {
     createtripModal.style.display = "flex";
     trips.style.display = "none";
+    bookings.style.display = "none";
 };
 
 showTrips.onclick = function () {
     trips.style.display = "flex";
     createtripModal.style.display = "none";
     bookings.style.display = "none";
-};
-
-tripCreated.onclick = function () {
-    tripModal.style.display = "flex";
 };
 
 showbooking.onclick = function () {

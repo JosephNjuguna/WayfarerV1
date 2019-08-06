@@ -34,7 +34,7 @@ a {
 }
 
 .navbar .nav-left {
-    padding-left: 2%
+    padding: 0.5% 0 0.5% 2%;
 }
 
 .navbar .nav-middle {
@@ -112,12 +112,16 @@ a {
     padding-top: 3.9%;
     display: flex;
     flex-direction: row;
+    min-height: 75vh;
+    overflow: hidden;
 }
-.mainview .bookingHistory{
+
+.mainview .bookingHistory {
     display: flex;
     flex-direction: column;
 }
-.mainview .success{
+
+.mainview .success {
     height: 60vh;
     margin: auto;
     display: flex;
@@ -160,6 +164,7 @@ a {
     display: flex;
     flex-basis: 25%;
     flex-direction: column;
+    height: 65vh;
 }
 
 .mainview .auth-class2 {
@@ -167,6 +172,7 @@ a {
     display: none;
     flex-basis: 25%;
     flex-direction: column;
+    height: 65vh;
 }
 
 .auth-body {
@@ -221,8 +227,6 @@ a {
     margin: 6px;
 }
 
-
-
 /* user */
 .mainview .offer {
     flex-basis: 30%;
@@ -236,7 +240,8 @@ a {
     padding: 2%;
     margin: auto;
 }
-.mainview  .bookingHistory .trips {
+
+.mainview .bookingHistory .trips {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -281,11 +286,17 @@ a {
 
 .trip-info img {
     width: 100%;
-    height: 70%;
+    height: 55%;
     border-style: solid;
     border-radius: 12px;
     border-width: 0px;
     box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+.trips .trip-info .trip-detail {
+    padding: 0 2%;
+    color: black;
 }
 
 .trip-info p {
@@ -299,20 +310,16 @@ a {
     padding: 3% 0%;
 }
 
+.trip-info .trip-detail {
+    margin-top: -2%;
+    padding: 0 2%;
+    color: white;
+}
+
+
 .offer .trip-info .trip-detail {
     margin-top: -32%;
-    padding: 0 2%;
-    color: white;
-}
-
-.trips .trip-info .trip-detail {
-    margin-top: -29%;
-    padding: 0 2%;
-    color: white;
-}
-
-.trip-info .trip-detail {
-    margin-top: -42%;
+    z-index: 4;
     padding: 0 2%;
     color: white;
 }
@@ -327,9 +334,10 @@ a {
     margin: 0;
     flex: 1;
 }
+
 .book-now h5 {
     margin: 0;
-    padding: 2% 0 0 3% ;
+    padding: 2% 0 0 3%;
 }
 
 .button {
@@ -350,26 +358,46 @@ a {
     flex-direction: column;
     padding: 2%;
 }
-.mainview-admin{
-    display:flex;
+
+.mainview-admin {
+    display: flex;
     flex-direction: column;
+    min-height: 85vh;
+    overflow: hidden;
 }
-.mainview-admin .info-trip-admin{
+
+.mainview-admin .info-trip-admin {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.mainview-admin .info-trip-admin-data {
     display: flex;
     flex-direction: row;
     margin: auto;
     padding: 0;
+    width: 70%;
 }
 
-.info-trip-admin .trip-detail{
+.mainview-admin .info-trip-admin-data img {
+    width: 60%;
+    height: 60%;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 0;
+}
+
+.info-trip-admin .trip-detail {
     display: flex;
     flex-direction: column;
     align-self: center;
     padding: 4%;
 }
 
-.info-trip-admin .trip-detail button{
+.info-trip-admin .trip-detail a {
     padding: 3%;
+    text-align: center;
     color: white;
     outline: none;
     border-style: solid;
@@ -379,7 +407,7 @@ a {
     cursor: pointer;
 }
 
-.tripcancel{
+.tripcancel {
     flex-direction: row;
     padding: 1%;
     display: none;
@@ -394,7 +422,7 @@ a {
     background-color: rgba(0, 0, 0, 0.705);
 }
 
-.mainview-admin .tripcancel .detail{
+.mainview-admin .tripcancel .detail {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -404,7 +432,8 @@ a {
     border-radius: 8px;
     border-width: 0;
 }
-.tripcancel .detail a{
+
+.tripcancel .detail a {
     padding: 2%;
     color: white;
     outline: none;
@@ -419,7 +448,7 @@ a {
     text-align: center;
 }
 
-.info-trip-admin img{
+.info-trip-admin img {
     width: 50%;
     height: 50%;
     box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.4);
@@ -570,15 +599,18 @@ a {
 
 .mainview-admin .main-body .admin-body {
     width: 90%;
-    padding: 5% 2%;
+    height: 100%;
+    padding: 5% 2% 3% 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-#tripsModal2{
+
+#tripsModal2 {
     display: none;
 }
-#bookingModal{
+
+#bookingModal {
     display: none;
 }
 
@@ -586,9 +618,6 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-basis: 70%;
-    padding: 2%;
-    margin: auto;
 }
 
 .mainview-admin .main-body .admin-body .bookings {
@@ -610,14 +639,17 @@ a {
     border-width: 0px;
     background-color: rgb(223, 223, 223);
 }
+
 .mainview-admin .main-body .admin-body .bookings .booking-detail p {
-   margin: 0;
-   padding: 1px;
+    margin: 0;
+    padding: 1px;
 }
-.mainview-admin .main-body .admin-body .bookings .booking-detail .book-now p{
+
+.mainview-admin .main-body .admin-body .bookings .booking-detail .book-now p {
     flex: 1;
     padding-right: 12px;
- }
+}
+
 .mainview-admin .main-body .admin-body .create-trip {
     display: flex;
     flex-direction: column;
@@ -625,19 +657,25 @@ a {
     margin: auto;
     background-color: whitesmoke;
     padding: 0 1%;
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 0px;
+    box-shadow: 0 4px 6px hsla(0, 0%, 0%, .1);
 }
 
 .mainview-admin .main-body .admin-body .create-trip .footer {
     display: flex;
     flex-direction: column;
+    padding:1%;
 }
 
-.mainview-admin .main-body .admin-body .create-trip .footer button {
+.mainview-admin .main-body .admin-body .create-trip .footer a {
     margin: auto;
     background-color: #0552B5;
     color: white;
-    padding: 4%;
+    padding: 2%;
     width: 50%;
+    text-align: center;
     border-style: solid;
     border-radius: 4px;
     border-width: 0px;
@@ -656,6 +694,7 @@ a {
     border-style: solid;
     border-radius: 4px;
     border-width: 0px;
+    outline: none;
 }
 
 .mainview-admin .main-body .admin-body .create-trip .form-content label {
@@ -667,18 +706,19 @@ a {
     border-width: 0px;
 }
 
-.collectionfooter{
+.collectionfooter {
     margin-top: 5%;
+    padding: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.collectionfooter .collectiondiv{
-   margin: auto;
+.collectionfooter .collectiondiv {
+    margin: auto;
 }
 
-.collectionfooter .collectiondiv button{
+.collectionfooter .collectiondiv button {
     margin: 0;
     padding: 6px;
     color: white;
@@ -689,4 +729,106 @@ a {
     align-self: center;
     background-color: #0552B5;
     cursor: pointer;
- }
+}
+
+/* booked */
+.booked {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3% 0 1% 0;
+}
+
+.booked .booking-head {
+    font-size: 20px;
+    color: orangered;
+    align-self: center;
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 1px;
+    padding: 1%;
+}
+
+.booked-detail {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.booked-detail {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.booked-detail img {
+    width: 50%;
+    height: 50%;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 0;
+}
+
+.bus-booked {
+    padding-top: 3%;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+.booking-div {
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    margin: 1px;
+}
+
+.booking-div p {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.booking-div .accept {
+    margin: 5% 1% 0 0;
+    padding: 6px;
+    flex: 1;
+    color: white;
+    outline: none;
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 0;
+    align-self: flex-end;
+    text-align: center;
+    background-color: #0552B5;
+    cursor: pointer;
+}
+
+.booking-div .cancel {
+    color: grey;
+    margin: 5% 1% 0 0;
+    padding: 6px;
+    flex: 1;
+    outline: none;
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 0;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+th,
+tr,
+table,
+td {
+    border: 1px solid #d4caca;
+    border-collapse: collapse;
+    padding: 0 6px 0 5px;
+}
