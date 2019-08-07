@@ -25,23 +25,22 @@
                 <a href="./index.html">Log out</a>
             </div>
         </div>
+        
         <div class="main-body">
+
             <nav class="navbar">
                 <ul class="nav-left">
                     <li class="left-items">
+                        <a>Admin Dashboard</a>
                         <a id="showNav" href="#"><i class="fa fa-reorder"></i></a>
                     </li>
                 </ul>
                 <ul class="nav-right">
                     <li class="right-items">
-                        <a href="#">Admin Dashboard</a>
+                        <a href="./index.html">Admin Log out</a>
                     </li>
                 </ul>
-                <ul class="nav-right">
-                    <li class="right-items">
-                        <a href="./index.html">Admin log out.</a>
-                    </li>
-                </ul>
+        
             </nav>
 
             <div class="admin-body" id="createTrips">
@@ -51,8 +50,10 @@
                             <p>Create a bus trip</p>
                         </div>
                         <div class="form-content">
-                            <label for="">Bus Trip</label>
-                            <input type="text" placeholder="enter bus trip">
+                            <label for="">Bus Origin</label>
+                            <input type="text" placeholder="enter bus origin">
+                            <label for="">Bus Destination</label>
+                            <input type="text" placeholder="enter bus Destination">
                             <label for="">Bus license number</label>
                             <input type="text" placeholder="enter bus license number ">
                             <label for="">Bus Fare</label>
@@ -63,7 +64,7 @@
                             <input type="text" placeholder="enter seat capacity">
                         </div>
                         <div class="footer">
-                            <button type="button" id="createTrip">Create</button>
+                            <a href="./createdsuccessfully.html">CREATE TRIP</a>
                         </div>
                     </form>
                 </div>
@@ -86,6 +87,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="trip-info">
                         <img src="./static/image/bus6.jpg" alt="">
                         <div class="trip-detail">
@@ -101,6 +103,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="trip-info">
                         <img src="./static/image/bus4.jpg" alt="">
                         <div class="trip-detail">
@@ -116,6 +119,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="trip-info">
                         <img src="./static/image/bus2.jpg" alt="">
                         <div class="trip-detail">
@@ -131,6 +135,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="trip-info">
                         <img src="./static/image/bus6.jpg" alt="">
                         <div class="trip-detail">
@@ -146,6 +151,7 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="trip-info">
                         <img src="./static/image/bus4.jpg" alt="">
                         <div class="trip-detail">
@@ -172,7 +178,168 @@
 
             <div class="admin-body " id="bookingModal">
                 <div class="bookings">
-
+                    <table>
+                        <tr class="order-info-row">
+                            <th>Username</th>
+                            <th>email</th>
+                            <th>Booking Id</th>
+                            <th>Date</th>
+                            <th>Bus License no</th>
+                            <th>Trip Origin</th>
+                            <th>Trip Destination</th>
+                            <th>Seat Number</th>
+                        </tr>
+                        <tr class="order-data-row">
+                            <td class="name">Joseph Njuguna</td>
+                            <td class="email"> josephnjuguna482@gmail.com </td>
+                            <td class="booking id">1</td>
+                            <td class="date">16/1/2019</td>
+                            <td class="bus number">KCC 723</td>
+                            <td class="origin">Nairobi</td>
+                            <td class="destination">Kigali</td>
+                            <td class="seatnumber"><b>15</b></td>
+                        </tr>
+                        <tr class="order-data-row">
+                            <td class="name">Alan Meh</td>
+                            <td class="email"> alanmeh@gmail.com </td>
+                            <td class="booking id">16</td>
+                            <td class="date">12/1/2019</td>
+                            <td class="bus number">KCC 443</td>
+                            <td class="origin">Kampala</td>
+                            <td class="destination">Kigali</td>
+                            <td class="seatnumber"><b>5</b></td>
+                        </tr>
+                        <tr class="order-data-row">
+                            <td class="name">Naomi W</td>
+                            <td class="email"> naomi124@gmail.com </td>
+                            <td class="booking id">77</td>
+                            <td class="date">6/1/2019</td>
+                            <td class="bus number">KCC 123</td>
+                            <td class="origin">Kigali</td>
+                            <td class="destination">Nairobi</td>
+                            <td class="seatnumber"><b>8</b></td>
+                        </tr>
+                        <tr class="order-data-row">
+                            <td class="name">Joseph Njuguna</td>
+                            <td class="email"> njuguna@gmail.com </td>
+                            <td class="booking id">1</td>
+                            <td class="date">16/1/2019</td>
+                            <td class="bus number">KCC 189</td>
+                            <td class="origin">Nairobi</td>
+                            <td class="destination">Kigali</td>
+                            <td class="seatnumber"><b>15</b></td>
+                        </tr>
+                        <tr class="order-data-row">
+                            <td class="name">Alan Meh</td>
+                            <td class="email"> alanmeh@gmail.com </td>
+                            <td class="booking id">16</td>
+                            <td class="date">12/1/2019</td>
+                            <td class="bus number">KCC 123</td>
+                            <td class="origin">Kampala</td>
+                            <td class="destination">Kigali</td>
+                            <td class="seatnumber"><b>5</b></td>
+                        </tr>
+                        <tr class="order-data-row">
+                            <td class="name">Naomi W</td>
+                            <td class="email"> naomi124@gmail.com </td>
+                            <td class="booking id">77</td>
+                            <td class="date">6/1/2019</td>
+                            <td class="bus number">KCC 123</td>
+                            <td class="origin">Kigali</td>
+                            <td class="destination">Nairobi</td>
+                            <td class="seatnumber"><b>8</b></td>
+                        </tr>
+                        <tr class="order-data-row">
+                            <td class="name">Joseph Njuguna</td>
+                            <td class="email"> josna482@gmail.com </td>
+                            <td class="booking id">1</td>
+                            <td class="date">16/1/2019</td>
+                            <td class="bus number">KCC 123</td>
+                            <td class="origin">Nairobi</td>
+                            <td class="destination">Kigali</td>
+                            <td class="seatnumber"><b>15</b></td>
+                        </tr>
+                        <tr class="order-data-row">
+                            <td class="name">Alan Meh</td>
+                            <td class="email"> alanh@gmail.com </td>
+                            <td class="booking id">16</td>
+                            <td class="date">12/1/2019</td>
+                            <td class="bus number">KCC 123</td>
+                            <td class="origin">Kampala</td>
+                            <td class="destination">Kigali</td>
+                            <td class="seatnumber"><b>5</b></td>
+                        </tr>
+                        <tr class="order-data-row">
+                            <td class="name">Naomi W</td>
+                            <td class="email"> naomi124@gmail.com </td>
+                            <td class="booking id">77</td>
+                            <td class="date">6/1/2019</td>
+                            <td class="bus number">KCC 123</td>
+                            <td class="origin">Kigali</td>
+                            <td class="destination">Nairobi</td>
+                            <td class="seatnumber"><b>8</b></td>
+                        </tr>
+                        <tr class="order-data-row">
+                            <td class="name">Joseph Njuguna</td>
+                            <td class="email"> josuna482@gmail.com </td>
+                            <td class="booking id">1</td>
+                            <td class="date">16/1/2019</td>
+                            <td class="bus number">KCC 123</td>
+                            <td class="origin">Nairobi</td>
+                            <td class="destination">Kigali</td>
+                            <td class="seatnumber"><b>15</b></td>
+                        </tr>
+                        <tr class="order-data-row">
+                            <td class="name">Alan Meh</td>
+                            <td class="email"> alanmeh@gmail.com </td>
+                            <td class="booking id">16</td>
+                            <td class="date">12/1/2019</td>
+                            <td class="bus number">KCC 123</td>
+                            <td class="origin">Kampala</td>
+                            <td class="destination">Kigali</td>
+                            <td class="seatnumber"><b>5</b></td>
+                        </tr>
+                        <tr class="order-data-row">
+                            <td class="name">Naomi W</td>
+                            <td class="email"> naomi124@gmail.com </td>
+                            <td class="booking id">77</td>
+                            <td class="date">6/1/2019</td>
+                            <td class="bus number">KCC 123</td>
+                            <td class="origin">Kigali</td>
+                            <td class="destination">Nairobi</td>
+                            <td class="seatnumber"><b>8</b></td>
+                        </tr>
+                        <tr class="order-data-row">
+                            <td class="name">Joseph Njuguna</td>
+                            <td class="email"> josea482@gmail.com </td>
+                            <td class="booking id">1</td>
+                            <td class="date">16/1/2019</td>
+                            <td class="bus number">KCC 123</td>
+                            <td class="origin">Nairobi</td>
+                            <td class="destination">Kigali</td>
+                            <td class="seatnumber"><b>15</b></td>
+                        </tr>
+                        <tr class="order-data-row">
+                            <td class="name">Alan Meh</td>
+                            <td class="email"> alanmeh@gmail.com </td>
+                            <td class="booking id">16</td>
+                            <td class="date">12/1/2019</td>
+                            <td class="bus number">KCC 123</td>
+                            <td class="origin">Kampala</td>
+                            <td class="destination">Kigali</td>
+                            <td class="seatnumber"><b>13</b></td>
+                        </tr>
+                        <tr class="order-data-row">
+                            <td class="name">Naomi W</td>
+                            <td class="email"> naomi124@gmail.com </td>
+                            <td class="booking id">77</td>
+                            <td class="date">6/1/2019</td>
+                            <td class="bus number">KCC 123</td>
+                            <td class="origin">Kigali</td>
+                            <td class="destination">Nairobi</td>
+                            <td class="seatnumber"><b>4</b></td>
+                        </tr>
+                    </table>
                     <div class="booking-detail">
                         <p><label for="">name :</label> Joseph Njuguna</p>
                         <p><label for="">email : </label> josephnjuguna482@gmail.com</p>
@@ -218,7 +385,6 @@
                         <p>Trip Route : <b>KAMPALA-KIGALI</b></p>
                         <p>Seat Capacity : <b>15</b></p>
                     </div>
-
                 </div>
                 <div class="collectionfooter">
                     <div class="collectiondiv">
@@ -236,23 +402,22 @@
                 </div>
             </div>
 
+            <footer class="footer">
+                <div class="social">
+                    <p>Contact us on:</p>
+                </div>
+                <div class="social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+                <div class="copyright">
+                    <P>WAYFERER @ 2019.</P>
+                </div>
+            </footer>
+
         </div>
     </div>
-    <footer class="footer">
-        <div class="social">
-            <p>Contact us on:</p>
-        </div>
-        <div class="social">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-        </div>
-        <div class="copyright">
-            <P>WAYFERER @ 2019.</P>
-        </div>
-    </footer>
     <script type="text/javascript" src="./static/js/admin.js"></script>
-
 </body>
-
 </html>

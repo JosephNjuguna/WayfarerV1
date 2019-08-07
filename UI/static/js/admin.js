@@ -14,6 +14,7 @@ var hideSidenav  = document.getElementById("hideNav");
 showCreatetrip.onclick = function () {
     createtripModal.style.display = "flex";
     trips.style.display = "none";
+    bookings.style.display = "none";
 };
 
 showSidenav.onclick = function () {
@@ -28,10 +29,6 @@ showTrips.onclick = function () {
     trips.style.display = "flex";
     createtripModal.style.display = "none";
     bookings.style.display = "none";
-};
-
-tripCreated.onclick = function () {
-    tripModal.style.display = "flex";
 };
 
 showbooking.onclick = function () {
