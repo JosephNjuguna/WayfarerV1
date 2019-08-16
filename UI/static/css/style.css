@@ -79,6 +79,7 @@ a {
 }
 
 .footer {
+    margin-top: 1%;
     display: flex;
     flex-direction: column;
     background-color: whitesmoke;
@@ -385,8 +386,8 @@ a {
 .info-trip-admin .trip-detail {
     display: flex;
     flex-direction: column;
-    align-self: center;
     padding: 4%;
+    width: 100%;
 }
 
 .info-trip-admin .trip-detail a {
@@ -397,7 +398,7 @@ a {
     border-style: solid;
     border-radius: 4px;
     border-width: 0;
-    background-color: rgb(253, 7, 7);
+    background-color: rgb(7, 114, 253);
     cursor: pointer;
 }
 
@@ -504,32 +505,6 @@ a {
 
 #bookingModal {
     display: none;
-}
-
-
-.collectionfooter {
-    margin-top: 5%;
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.collectionfooter .collectiondiv {
-    margin: auto;
-}
-
-.collectionfooter .collectiondiv button {
-    margin: 0;
-    padding: 6px;
-    color: white;
-    outline: none;
-    border-style: solid;
-    border-radius: 4px;
-    border-width: 0;
-    align-self: center;
-    background-color: #0552B5;
-    cursor: pointer;
 }
 
 
@@ -644,7 +619,6 @@ td {
     
     .mainview-admin .main-body .admin-body {
         width: 90%;
-        height: 100%;
         padding: 5% 2% 3% 2%;
         display: flex;
         flex-direction: column;
@@ -971,6 +945,7 @@ td {
     .mainview .intro .intro-header {
         font-size: 40px;
         color: white;
+        font-family: 'Raleway', sans-serif;
     }
 
     .mainview .intro .intro-body {
@@ -1105,11 +1080,13 @@ td {
     .mainview .offer .trip-info {
         flex-basis: 30%;
         margin: 0 0 4% 0;
+        font-size: 14px;
     }
 
     .trips .trip-info {
         flex-basis: 30%;
         padding: 0 1%;
+        font-size: 13px;
     }
 
     .trip-info img {
@@ -1123,6 +1100,7 @@ td {
 
     .trip-info p {
         margin: 2% 0;
+        padding: 0.5%;
     }
 
     .trip-info h5 {
@@ -1137,6 +1115,7 @@ td {
     }
 
     .trips .trip-info .trip-detail {
+        margin-top: 2px;
         padding: 0 2%;
     }
 
@@ -1317,7 +1296,7 @@ td {
         color: white;
         outline: none;
         border-style: solid;
-        border-radius: 8px;
+        border-radius: 4px;
         border-width: 0;
         align-self: center;
         background-color: #0552B5;
@@ -1509,7 +1488,6 @@ td {
     }
 
     .collectionfooter {
-        margin-top: 5%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1522,13 +1500,13 @@ td {
     .collectionfooter .collectiondiv button {
         margin: 0;
         padding: 6px;
-        color: white;
+        color: #0552B5;
         outline: none;
         border-style: solid;
         border-radius: 4px;
         border-width: 0;
         align-self: center;
-        background-color: #0552B5;
+        background-color: rgb(255, 255, 255);
         cursor: pointer;
     }
 }
@@ -1957,12 +1935,14 @@ td {
         color: white;
         padding: 4px;
         margin: 0;
+        font-family: 'Raleway', sans-serif;
     }
 
     .mainview .intro .intro-header h1 {
         font-size: 30px;
         color: white;
         padding: 4px;
+        font-family: 'Raleway', sans-serif;
     }
 
     .mainview .intro .intro-body {
